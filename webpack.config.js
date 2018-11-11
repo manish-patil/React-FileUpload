@@ -1,8 +1,11 @@
 var path = require("path");
 
 module.exports = {
-    entry: ["./src/index.tsx"],
+    entry: [
+        "./src/index.tsx"
+    ],
     mode: "development",
+    devtool: 'source-map',
     watch: true,
     watchOptions: {
         ignored: /node_modules/
